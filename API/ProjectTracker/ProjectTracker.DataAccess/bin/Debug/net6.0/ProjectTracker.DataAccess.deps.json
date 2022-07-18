@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ProjectTracker.DataAccess/1.0.0": {
+        "dependencies": {
+          "ProjectTracker.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ProjectTracker.DataAccess.dll": {}
+        }
+      },
+      "ProjectTracker.Domain/1.0.0": {
+        "runtime": {
+          "ProjectTracker.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjectTracker.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectTracker.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

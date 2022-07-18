@@ -1,4 +1,5 @@
 ﻿using ProjectTracker.Domain;
+using ProjectTracker.Dtos.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace ProjectTracker.Business
 {
     public interface IProjectService
     {
-        Task<IList<Project>> GetProjects();
+        Task<IList<ProjectListResponse>> GetProjects();
 
     }
 }

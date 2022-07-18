@@ -1,0 +1,15 @@
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\bin\Debug\net6.0\ProjectTracker.DataAccess.deps.json
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\bin\Debug\net6.0\ProjectTracker.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\bin\Debug\net6.0\ProjectTracker.DataAccess.pdb
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\bin\Debug\net6.0\ProjectTracker.Domain.dll
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\bin\Debug\net6.0\ProjectTracker.Domain.pdb
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ProjectTracker.DataAccess.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ProjectTracker.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ProjectTracker.DataAccess.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ProjectTracker.DataAccess.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ProjectTracker.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ProjectTracker.DataAccess.csproj.CopyComplete
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ProjectTracker.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\refint\ProjectTracker.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ProjectTracker.DataAccess.pdb
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ref\ProjectTracker.DataAccess.dll

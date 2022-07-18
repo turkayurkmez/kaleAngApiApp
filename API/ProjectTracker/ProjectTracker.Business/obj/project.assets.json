@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "ProjectTracker.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ProjectTracker.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProjectTracker.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectTracker.DataAccess.dll": {}
+        }
+      },
       "ProjectTracker.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -11,19 +24,41 @@
         "runtime": {
           "bin/placeholder/ProjectTracker.Domain.dll": {}
         }
+      },
+      "ProjectTracker.Dtos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ProjectTracker.Dtos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectTracker.Dtos.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "ProjectTracker.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../ProjectTracker.DataAccess/ProjectTracker.DataAccess.csproj",
+      "msbuildProject": "../ProjectTracker.DataAccess/ProjectTracker.DataAccess.csproj"
+    },
     "ProjectTracker.Domain/1.0.0": {
       "type": "project",
       "path": "../ProjectTracker.Domain/ProjectTracker.Domain.csproj",
       "msbuildProject": "../ProjectTracker.Domain/ProjectTracker.Domain.csproj"
+    },
+    "ProjectTracker.Dtos/1.0.0": {
+      "type": "project",
+      "path": "../ProjectTracker.Dtos/ProjectTracker.Dtos.csproj",
+      "msbuildProject": "../ProjectTracker.Dtos/ProjectTracker.Dtos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ProjectTracker.Domain >= 1.0.0"
+      "ProjectTracker.DataAccess >= 1.0.0",
+      "ProjectTracker.Domain >= 1.0.0",
+      "ProjectTracker.Dtos >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -53,8 +88,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.DataAccess\\ProjectTracker.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.DataAccess\\ProjectTracker.DataAccess.csproj"
+            },
             "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.Domain\\ProjectTracker.Domain.csproj": {
               "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.Domain\\ProjectTracker.Domain.csproj"
+            },
+            "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.Dtos\\ProjectTracker.Dtos.csproj": {
+              "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.Dtos\\ProjectTracker.Dtos.csproj"
             }
           }
         }

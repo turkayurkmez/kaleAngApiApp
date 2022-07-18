@@ -12,7 +12,7 @@ namespace ProjectTracker.Dtos.Responses
         public string Name { get; set; }
         public string? Description { get; set; }
         public DateTime? StartedDate { get; set; }
-        public double CompletedRate { get; private set; }
+        public double CompletedRate { get; set; }
 
         public IEnumerable<ProjectTaskListResponse> Tasks { get; set; }
 

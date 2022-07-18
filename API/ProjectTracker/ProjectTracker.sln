@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTracker.Business", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTracker.Dtos", "ProjectTracker.Dtos\ProjectTracker.Dtos.csproj", "{9057A7C6-E2C1-48C3-9BC3-BE553529E615}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTracker.DataAccess", "ProjectTracker.DataAccess\ProjectTracker.DataAccess.csproj", "{30007C21-4F0D-4289-8DC7-964052D67672}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9057A7C6-E2C1-48C3-9BC3-BE553529E615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9057A7C6-E2C1-48C3-9BC3-BE553529E615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9057A7C6-E2C1-48C3-9BC3-BE553529E615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30007C21-4F0D-4289-8DC7-964052D67672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30007C21-4F0D-4289-8DC7-964052D67672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30007C21-4F0D-4289-8DC7-964052D67672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30007C21-4F0D-4289-8DC7-964052D67672}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

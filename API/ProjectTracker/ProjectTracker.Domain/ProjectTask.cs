@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectTracker.Domain
 {
-    public class ProjectTask
+    public class ProjectTask : IEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -1,0 +1,12 @@
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\bin\Debug\net6.0\ProjectTracker.Dtos.deps.json
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\bin\Debug\net6.0\ProjectTracker.Dtos.dll
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\bin\Debug\net6.0\ProjectTracker.Dtos.pdb
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ProjectTracker.Dtos.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ProjectTracker.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ProjectTracker.Dtos.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ProjectTracker.Dtos.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ProjectTracker.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ProjectTracker.Dtos.dll
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\refint\ProjectTracker.Dtos.dll
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ProjectTracker.Dtos.pdb
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ref\ProjectTracker.Dtos.dll

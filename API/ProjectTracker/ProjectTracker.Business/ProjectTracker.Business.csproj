@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ProjectTracker.DataAccess\ProjectTracker.DataAccess.csproj" />
     <ProjectReference Include="..\ProjectTracker.Domain\ProjectTracker.Domain.csproj" />
+    <ProjectReference Include="..\ProjectTracker.Dtos\ProjectTracker.Dtos.csproj" />
   </ItemGroup>
 
 </Project>
