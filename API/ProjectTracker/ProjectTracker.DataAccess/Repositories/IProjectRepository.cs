@@ -9,9 +9,9 @@ namespace ProjectTracker.DataAccess.Repositories
 {
     public interface IProjectRepository : IRepository<Project>
     {
-        IEnumerable<Project> SearchProjectsByName(string name);
-        IEnumerable<Project> SearchProjectsByCategoryId(int id);
-        IEnumerable<Project> SearchProjectsByCategoryName(string name);
+        Task<IEnumerable<Project>> SearchProjectsByName(string name);
+        Task<IEnumerable<Project>> SearchProjectsByCategoryId(int id);
+        Task<IEnumerable<Project>> SearchProjectsByCategoryName(string name);
 
 
     }

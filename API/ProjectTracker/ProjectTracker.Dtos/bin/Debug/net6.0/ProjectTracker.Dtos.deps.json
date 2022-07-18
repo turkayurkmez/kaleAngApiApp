@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ProjectTracker.Dtos/1.0.0": {
+        "dependencies": {
+          "ProjectTracker.Domain": "1.0.0"
+        },
         "runtime": {
           "ProjectTracker.Dtos.dll": {}
+        }
+      },
+      "ProjectTracker.Domain/1.0.0": {
+        "runtime": {
+          "ProjectTracker.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ProjectTracker.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectTracker.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

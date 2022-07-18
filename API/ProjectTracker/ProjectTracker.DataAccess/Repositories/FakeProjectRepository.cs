@@ -20,7 +20,7 @@ namespace ProjectTracker.DataAccess.Repositories
                     new ProjectTask{ Id=2, Name="Task B", Description="Task B From Project X", ProjectId=1},
 
                 }
-            },               
+            },
                 new Project{ Id=2, Name="Fake Project Y", Description="Y Description", StartedDate=DateTime.Now, Tasks = new List<ProjectTask>
                 {
                     new ProjectTask{ Id=3, Name="Task C", Description="Task C From Project Y", ProjectId=2},
@@ -53,29 +53,32 @@ namespace ProjectTracker.DataAccess.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Project>> GetAll()
+        public async Task<IEnumerable<Project>> GetAll()
+        {
+            return await Task.FromResult(projects);
+        }
+
+        public async Task<Project> GetById(int id)
+        {
+            var project = projects.Find(x => x.Id == id);
+            return await Task.FromResult(project);
+        }
+
+        public Task<IEnumerable<Project>> SearchProjectsByCategoryId(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Project> GetById(int id)
+        public Task<IEnumerable<Project>> SearchProjectsByCategoryName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Project> SearchProjectsByCategoryId(int id)
+        public Task<IEnumerable<Project>> SearchProjectsByName(string name)
         {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Project> SearchProjectsByCategoryName(string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Project> SearchProjectsByName(string name)
-        {
-            throw new NotImplementedException();
+            
+            var projectList = projects.Where(p => p.Name.Contains(name, StringComparison.OrdinalIgnoreCase));
+            return Task.FromResult(projectList);
         }
 
         public Task Update(Project entity)

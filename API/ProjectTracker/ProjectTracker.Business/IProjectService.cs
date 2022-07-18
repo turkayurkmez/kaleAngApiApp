@@ -11,6 +11,8 @@ namespace ProjectTracker.Business
     public interface IProjectService
     {
         Task<IList<ProjectListResponse>> GetProjects();
+        Task<ProjectListResponse> GetProjectById(int id);
 
+        Task<IEnumerable<ProjectListResponse>> SearchProjectsByName(string name);
     }
 }

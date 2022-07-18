@@ -10,3 +10,6 @@ C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\P
 C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\refint\ProjectTracker.Dtos.dll
 C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ProjectTracker.Dtos.pdb
 C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ref\ProjectTracker.Dtos.dll
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\bin\Debug\net6.0\ProjectTracker.Domain.dll
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\bin\Debug\net6.0\ProjectTracker.Domain.pdb
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.Dtos\obj\Debug\net6.0\ProjectTracker.Dtos.csproj.CopyComplete

@@ -49,6 +49,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -203,7 +209,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.Domain\\ProjectTracker.Domain.csproj": {
+                "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.Domain\\ProjectTracker.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

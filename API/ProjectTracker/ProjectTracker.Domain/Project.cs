@@ -15,7 +15,7 @@ namespace ProjectTracker.Domain
         public DateTime? ExpectedFinishedDate { get; set; }
         public DateTime? ActualFinishedDate { get; set; }
 
-        public double CompletedRate { get; private set; }
+        public double CompletedRate { get;  private set; }
 
         //Bir projenin birden fazla task'ı olabilir.
         //Bir proje, bir kategoriye aittir.

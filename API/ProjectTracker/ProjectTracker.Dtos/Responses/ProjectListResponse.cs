@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectTracker.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,8 @@ namespace ProjectTracker.Dtos.Responses
         public DateTime? StartedDate { get; set; }
         public double CompletedRate { get; set; }
 
-        public IEnumerable<ProjectTaskListResponse> Tasks { get; set; }
+        public IEnumerable<ProjectTask> Tasks { get; set; }
 
-
+        
     }
 }
