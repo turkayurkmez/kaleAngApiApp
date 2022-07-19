@@ -10,7 +10,6 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "ProjectTracker.DataAccess": "1.0.0",
-          "ProjectTracker.Domain": "1.0.0",
           "ProjectTracker.Dtos": "1.0.0"
         },
         "runtime": {
@@ -87,9 +86,6 @@
         }
       },
       "ProjectTracker.Dtos/1.0.0": {
-        "dependencies": {
-          "ProjectTracker.Domain": "1.0.0"
-        },
         "runtime": {
           "ProjectTracker.Dtos.dll": {}
         }

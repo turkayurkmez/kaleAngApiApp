@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ProjectTracker.Domain;
+using ProjectTracker.Dtos.Requests;
 using ProjectTracker.Dtos.Responses;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace ProjectTracker.Business.Mapping
         {
             CreateMap<ProjectTask, ProjectTaskListResponse>();
             CreateMap<Project, ProjectListResponse>();
+            CreateMap<CreateProjectRequest, Project>();
            
         }
     }

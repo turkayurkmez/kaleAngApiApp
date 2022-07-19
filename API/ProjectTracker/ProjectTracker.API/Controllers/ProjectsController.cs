@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProjectTracker.Business;
+using ProjectTracker.Dtos.Requests;
 using ProjectTracker.Dtos.Responses;
 
 namespace ProjectTracker.API.Controllers
@@ -44,6 +45,46 @@ namespace ProjectTracker.API.Controllers
             var projects = await projectService.SearchProjectsByName(name);
             return Ok(projects); 
         }
+
+        [HttpPost]
+        public async Task<IActionResult> AddProject(CreateProjectRequest createProjectRequest)
+        {
+            if (ModelState.IsValid)
+            {
+                ProjectListResponse createdProject = await projectService.AddProject(createProjectRequest);
+                return CreatedAtAction(nameof(GetProjectsById), routeValues: new { id = createdProject.Id }, createdProject);
+            }
+
+            return BadRequest(ModelState);
+          
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateProject(int id, UpdateProjectRequest updateProjectRequest)
+        {
+            bool isProjectExists = await projectService.IsExists(id);
+            if (isProjectExists)
+            {
+                if (ModelState.IsValid)
+                {
+                    //idempotent
+                    // TODO: ProjectService, Mapping ve Repository işlemleri yapılacak!
+                }
+
+                return BadRequest(ModelState);
+            }
+            return NotFound();
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            bool isProjectExists = await projectService.IsExists(id);
+            if (isProjectExists)
+            {
+
+            }
+            return NotFound();
+        } 
 
     }
 }

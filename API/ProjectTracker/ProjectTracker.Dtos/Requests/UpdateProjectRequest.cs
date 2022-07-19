@@ -1,23 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjectTracker.Dtos.Responses
+namespace ProjectTracker.Dtos.Requests
 {
-    public class ProjectListResponse
+    public class UpdateProjectRequest
     {
         public int Id { get; set; }
+        [Required(ErrorMessage = "Proje adı belirtilmelidir")]
+        [MinLength(3, ErrorMessage = "Proje adı en az 3 harften oluşmalıdır")]
         public string Name { get; set; }
         public string? Description { get; set; }
         public DateTime? StartedDate { get; set; }
-        public double CompletedRate { get; set; }
-
+        public DateTime? ExpectedFinishedDate { get; set; }
         public int? CategoryId { get; set; }
-
-        public ICollection<ProjectTaskListResponse> Tasks { get; set; }
-
-        
     }
 }
