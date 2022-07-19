@@ -13,7 +13,7 @@ namespace ProjectTracker.Business.Mapping
     {
         public MappingProfile()
         {
-            CreateMap<Task, ProjectTaskListResponse>();
+            CreateMap<ProjectTask, ProjectTaskListResponse>();
             CreateMap<Project, ProjectListResponse>();
            
         }

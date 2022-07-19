@@ -114,9 +114,6 @@
       "ProjectTracker.Dtos/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "ProjectTracker.Domain": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/ProjectTracker.Dtos.dll": {}
         },
@@ -341,7 +338,6 @@
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "ProjectTracker.DataAccess >= 1.0.0",
-      "ProjectTracker.Domain >= 1.0.0",
       "ProjectTracker.Dtos >= 1.0.0"
     ]
   },
@@ -374,9 +370,6 @@
           "projectReferences": {
             "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.DataAccess\\ProjectTracker.DataAccess.csproj": {
               "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.DataAccess\\ProjectTracker.DataAccess.csproj"
-            },
-            "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.Domain\\ProjectTracker.Domain.csproj": {
-              "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.Domain\\ProjectTracker.Domain.csproj"
             },
             "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.Dtos\\ProjectTracker.Dtos.csproj": {
               "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\KaleGrup\\apiAndAngular\\API\\ProjectTracker\\ProjectTracker.Dtos\\ProjectTracker.Dtos.csproj"

@@ -10,8 +10,4 @@
     <Folder Include="Requests\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ProjectTracker.Domain\ProjectTracker.Domain.csproj" />
-  </ItemGroup>
-
 </Project>

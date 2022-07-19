@@ -15,7 +15,7 @@ namespace ProjectTracker.Dtos.Responses
         public DateTime? StartedDate { get; set; }
         public double CompletedRate { get; set; }
 
-        public IEnumerable<ProjectTask> Tasks { get; set; }
+        public ICollection<ProjectTaskListResponse> Tasks { get; set; }
 
         
     }
