@@ -13,3 +13,5 @@ C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\P
 C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\refint\ProjectTracker.DataAccess.dll
 C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ProjectTracker.DataAccess.pdb
 C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ref\ProjectTracker.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\bin\Debug\net6.0\ProjectTracker.DataAccess.runtimeconfig.json
+C:\Users\turka\source\repos\Kurumsal\KaleGrup\apiAndAngular\API\ProjectTracker\ProjectTracker.DataAccess\obj\Debug\net6.0\ProjectTracker.DataAccess.genruntimeconfig.cache

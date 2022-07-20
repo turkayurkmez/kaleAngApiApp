@@ -50,12 +50,12 @@ namespace ProjectTracker.DataAccess.Repositories
 
         public Task Delete(Project entity)
         {
-            throw new NotImplementedException();
+            return Task.CompletedTask;
         }
 
         public Task Delete(int id)
         {
-            throw new NotImplementedException();
+            return Task.CompletedTask;
         }
 
         public async Task<IEnumerable<Project>> GetAll()
@@ -67,6 +67,12 @@ namespace ProjectTracker.DataAccess.Repositories
         {
             var project = projects.Find(x => x.Id == id);
             return await Task.FromResult(project);
+        }
+
+        public async Task<bool> IsExists(int id)
+        {
+            var isExist = projects.Any(project => project.Id == id);
+            return await Task.FromResult(isExist);
         }
 
         public Task<IEnumerable<Project>> SearchProjectsByCategoryId(int id)
@@ -88,7 +94,7 @@ namespace ProjectTracker.DataAccess.Repositories
 
         public Task Update(Project entity)
         {
-            throw new NotImplementedException();
+            return Task.CompletedTask;
         }
     }
 }

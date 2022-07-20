@@ -16,5 +16,9 @@ namespace ProjectTracker.Business
         Task<IEnumerable<ProjectListResponse>> SearchProjectsByName(string name);
         Task<ProjectListResponse> AddProject(CreateProjectRequest createProjectRequest);
         Task<bool> IsExists(int id);
+
+        Task UpdateProject(UpdateProjectRequest updateProjectRequest); 
+        Task DeleteProject(int id);
+
     }
 }

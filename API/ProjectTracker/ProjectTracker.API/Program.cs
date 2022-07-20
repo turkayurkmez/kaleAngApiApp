@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using ProjectTracker.Business;
 using ProjectTracker.Business.Mapping;
+using ProjectTracker.DataAccess.Data;
 using ProjectTracker.DataAccess.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,8 +13,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IProjectService, ProjectService>();
-builder.Services.AddScoped<IProjectRepository, FakeProjectRepository>();
+builder.Services.AddScoped<IProjectRepository, EFProjectRepository>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+var connectionString = builder.Configuration.GetConnectionString("db");
+
+builder.Services.AddDbContext<ProjectTrackerDbContext>(option => option.UseSqlServer(connectionString));
 
 var app = builder.Build();
 

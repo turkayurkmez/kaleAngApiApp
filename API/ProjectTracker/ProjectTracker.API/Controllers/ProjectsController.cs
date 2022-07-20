@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ProjectTracker.API.Filters;
 using ProjectTracker.Business;
 using ProjectTracker.Dtos.Requests;
 using ProjectTracker.Dtos.Responses;
@@ -43,7 +44,7 @@ namespace ProjectTracker.API.Controllers
         public async Task<IActionResult> SearchProject(string name)
         {
             var projects = await projectService.SearchProjectsByName(name);
-            return Ok(projects); 
+            return Ok(projects);
         }
 
         [HttpPost]
@@ -56,35 +57,38 @@ namespace ProjectTracker.API.Controllers
             }
 
             return BadRequest(ModelState);
-          
+
         }
 
         [HttpPut("{id}")]
+        [ItemExists]
         public async Task<IActionResult> UpdateProject(int id, UpdateProjectRequest updateProjectRequest)
         {
-            bool isProjectExists = await projectService.IsExists(id);
-            if (isProjectExists)
+           
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    //idempotent
-                    // TODO: ProjectService, Mapping ve Repository işlemleri yapılacak!
-                }
-
-                return BadRequest(ModelState);
+                //idempotent
+                // TODO: ProjectService, Mapping ve Repository işlemleri yapılacak!
+               await projectService.UpdateProject(updateProjectRequest);
+                return Ok();
             }
-            return NotFound();
+
+            return BadRequest(ModelState);
+         
         }
         [HttpDelete("{id}")]
+        [ItemExists]
+        [NumberException()]
         public async Task<IActionResult> Delete(int id)
         {
-            bool isProjectExists = await projectService.IsExists(id);
-            if (isProjectExists)
+            if (id <= 0)
             {
-
+                throw new ArgumentOutOfRangeException(nameof(id), "id değeri, 0'dan büyük olmak zorunda");
             }
-            return NotFound();
-        } 
+
+            return Ok();
+           
+        }
 
     }
 }

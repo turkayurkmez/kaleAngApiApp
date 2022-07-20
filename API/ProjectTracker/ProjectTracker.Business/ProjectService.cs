@@ -30,6 +30,12 @@ namespace ProjectTracker.Business
             return response;
         }
 
+        public async Task DeleteProject(int id)
+        {
+           await projectRepository.Delete(id);
+          
+        }
+
         public async Task<ProjectListResponse> GetProjectById(int id)
         {
             var project = await projectRepository.GetById(id);
@@ -48,12 +54,24 @@ namespace ProjectTracker.Business
 
         }
 
+        public async Task<bool> IsExists(int id)
+        {
+            return await projectRepository.IsExists(id);
+        }
+
         public async Task<IEnumerable<ProjectListResponse>> SearchProjectsByName(string name)
         {
             var projects = await projectRepository.SearchProjectsByName(name);
             var result = mapper.Map<IEnumerable<ProjectListResponse>>(projects);
             
             return result;
+        }
+
+        public async Task UpdateProject(UpdateProjectRequest updateProjectRequest)
+        {
+            var project = mapper.Map<Project>(updateProjectRequest);
+            await projectRepository.Update(project);
+
         }
     }
 }

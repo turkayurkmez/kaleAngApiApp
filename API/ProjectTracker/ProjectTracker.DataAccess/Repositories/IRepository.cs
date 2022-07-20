@@ -16,5 +16,7 @@ namespace ProjectTracker.DataAccess.Repositories
         Task<IEnumerable<T>> GetAll();
         Task<T> GetById(int id);
 
+        Task<bool> IsExists(int id);
+
     }
 }

@@ -17,6 +17,7 @@ namespace ProjectTracker.Business.Mapping
             CreateMap<ProjectTask, ProjectTaskListResponse>();
             CreateMap<Project, ProjectListResponse>();
             CreateMap<CreateProjectRequest, Project>();
+            CreateMap<UpdateProjectRequest, Project>();
            
         }
     }
