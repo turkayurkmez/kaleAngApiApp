@@ -13,6 +13,7 @@ namespace ProjectTracker.DataAccess.Data
         public DbSet<Project> Projects { get; set; }
         public DbSet<ProjectTask> Tasks { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public ProjectTrackerDbContext(DbContextOptions<ProjectTrackerDbContext> options):base(options)
         {

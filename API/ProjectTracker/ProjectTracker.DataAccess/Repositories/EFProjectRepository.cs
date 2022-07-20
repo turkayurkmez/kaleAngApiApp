@@ -38,7 +38,7 @@ namespace ProjectTracker.DataAccess.Repositories
 
         public async Task<IEnumerable<Project>> GetAll()
         {
-            return await dbContext.Projects.Include(x=>x.Tasks).ToListAsync();
+            return await dbContext.Projects.Include(x => x.Tasks).ToListAsync();
         }
 
         public async Task<Project> GetById(int id)

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProjectTracker.API.Filters;
 using ProjectTracker.Business;
@@ -48,6 +49,7 @@ namespace ProjectTracker.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles ="Admin,Editor")]
         public async Task<IActionResult> AddProject(CreateProjectRequest createProjectRequest)
         {
             if (ModelState.IsValid)
@@ -86,6 +88,7 @@ namespace ProjectTracker.API.Controllers
                 throw new ArgumentOutOfRangeException(nameof(id), "id değeri, 0'dan büyük olmak zorunda");
             }
 
+            await projectService.DeleteProject(id);
             return Ok();
            
         }
