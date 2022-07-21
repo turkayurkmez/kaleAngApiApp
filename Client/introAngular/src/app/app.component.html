@@ -1,0 +1,27 @@
+<app-header-menu></app-header-menu>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <input #newTask type="text" name="" id="" class="form-control" placeholder="Yeni görev" [(ngModel)]="newTodoTask" >
+      <p>{{newTodoTask}}</p>
+      <button class="btn btn-success" (click)="addNewTask(newTask.value)">Ekle</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h3>{{ title }}</h3>
+      <p>Bu uygulama {{ owner }} tarafından {{ generatedDate }} tarihinde geliştirildi</p>
+      <p [innerText]="owner"></p>
+      <p>Yapılacak toplam {{ todoItems.length }} iş var</p>
+      <ul *ngFor="let item of todoItems">
+        <li>
+          <input type="checkbox" class="form-check-input" name="" id="" [(ngModel)]="item.isDone" >
+          {{item.name}} 
+          <span>[{{item.isDone ? 'Yapıldı':'Yapılmadı'}}]</span>
+
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
