@@ -1,1 +1,14 @@
-<p>project works!</p>
+<div class="card">
+    <div class="card-body">
+
+        <h3 class="card-title">{{project.name | titlecase}}
+            <span [ngClass]="isTaskFound ? 'show':'hide'" 
+                  class="badge bg-danger rounded-pill float-end">Kalan görev: {{inCompletedTaskCount}}</span>
+        </h3>
+        <p class="card-text">{{project.description}}</p>
+        <p class="card-text">{{project.completedRate | percent}}</p>
+        <p class="card-text">{{project.startedDate | date : 'mediumDate'}}</p>
+        <app-task-list [tasks]="project?.tasks"></app-task-list>
+
+    </div>
+</div>

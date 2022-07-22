@@ -1,1 +1,12 @@
-<p>project-list works!</p>
+<div class="container">
+    <div class="row">
+        <input type="text" class="form-control" name="" placeholder="Proje Adı..." [(ngModel)]="searchingName" id="">
+
+    </div>
+    <div class="row" *ngFor="let active of projects | search : searchingName ">
+        <div class="col-12 m-2" >
+            <app-project [project]="active"></app-project>
+        </div>
+    </div>
+   
+</div>

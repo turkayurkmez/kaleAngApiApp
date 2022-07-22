@@ -1,1 +1,5 @@
-<p>task-list works!</p>
+<ul class="list-group" *ngFor="let task of tasks">
+    <li class="list-group-item">
+        <input type="checkbox" class="form-check-input" [(ngModel)]="task.isCompleted" name="" id="">{{task.name}} - {{task.expectedDate | date:'mediumDate'}}
+    </li>
+</ul>

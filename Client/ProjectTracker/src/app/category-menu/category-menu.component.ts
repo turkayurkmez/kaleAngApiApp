@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Category } from '../models/category.model';
+import { Categories } from '../models/mocks/categories.mock';
 
 @Component({
   selector: 'app-category-menu',
@@ -8,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class CategoryMenuComponent implements OnInit {
 
   constructor() { }
+
+  categories: Category[] = Categories
 
   ngOnInit(): void {
   }
