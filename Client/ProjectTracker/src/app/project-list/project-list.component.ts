@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Projects } from '../models/mocks/projects.mock';
 import { Project } from '../models/project.model';
+import { ProjectsService } from '../services/projects.service';
 
 @Component({
   selector: 'app-project-list',
@@ -9,13 +10,14 @@ import { Project } from '../models/project.model';
 })
 export class ProjectListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private projectsService: ProjectsService) { }
 
-  projects: Project[] = Projects
+  projects: Project[];
 
   searchingName:string
 
   ngOnInit(): void {
+    this.projectsService.getProjects().subscribe(data=>this.projects = data);
   }
 
 }

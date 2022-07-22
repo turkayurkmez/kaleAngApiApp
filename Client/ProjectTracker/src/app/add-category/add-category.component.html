@@ -1,0 +1,12 @@
+<form #newCategory="ngForm" (ngSubmit)="submitForm(newCategory)">
+    <input #categoryName="ngModel" 
+            name="name"
+            [(ngModel)]="category.name" 
+            type="text" class="form-control"              
+            required minlength="3" placeholder="Kategori Adı" />
+    <span class="alert alert-danger form-control" *ngIf="categoryName.getError('required') && categoryName.invalid && (categoryName.pristine || categoryName.dirty)">Kategori adı boş olamaz!</span>
+    <span class="alert alert-danger form-control" *ngIf="categoryName.getError('minlength') && categoryName.invalid && (categoryName.pristine || categoryName.dirty)">Kategori adı en az 3 harf olmalıdır!</span>
+
+    <button class="btn btn-success" type="submit">Yeni Kategori Ekle</button>
+
+</form>
